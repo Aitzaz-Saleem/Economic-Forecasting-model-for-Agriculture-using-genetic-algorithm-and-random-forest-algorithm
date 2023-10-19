@@ -92,3 +92,35 @@ Residual Material (40 Kg/ Acre) | 386.834          | 385.6889     | 391.3989
 ---                             | ---              | ---          | ---
 No. of Watering Episodes        | 1.793422         | 1.790627     | 1.80465
 ---                             | ---              | ---          | ---
+
+# Table 4: Comparative Analysis for Evaluating Parameters ( R-2, MAE, MSE ,RMSE and Durbin Watson Score) across the population ranging from 1 to 5
+Population | R-2   | MAE    | MSE     | RMSE
+---        | ---   | ---    | ---     | ---
+1          | 0.996 | 17.227 | 633.667 | 25.173
+---        | ---   | ---    | ---     | ---
+2          | 0.996 | 17.918 | 647.561 | 24.101
+---        | ---   | ---    | ---     | ---
+3          | 0.996 | 17.928 | 675.515 | 25.991
+---        | ---   | ---    | ---     | ---
+4          | 0.996 | 16.427 | 578.278 | 24.047
+---        | ---   | ---    | ---     | ---
+5          | 0.996 | 15.815 | 546.686 | 23.381
+---        | ---   | ---    | ---     | ---
+
+# Table 5: The table presents the optimal parameters of the (RFR) model when applied to a population size of 5
+n_estimators | max_depth | min_samples_split | min_samples_leaf | mean_squared_error
+---          | ---       | ---               | ---              | ---
+178          | 42        | 3                 | 1                | 546.686
+---          | ---       | ---               | ---              | ---
+
+# Table 6: The table presents training evaluation metrics at the optimal number of estimators
+n_estimators | R-2   | MAE   | MSE     | RMSE
+---          | ---   | ---   | ---     | ---
+178          | 0.999 | 6.335 | 114.963 | 10.722
+---          | ---   | ---   | ---     | ---
+
+# Table 7: The table presents testing evaluation metrics at the optimal number of estimators
+n_estimators | R-2   | MAE    | MSE     | RMSE   | DW Score
+---          | ---   | ---    | ---     | ---    | ---    
+178          | 0.996 | 15.815 | 546.686 | 23.381 | 2.021
+---          | ---   | ---    | ---     | ---    | ---
