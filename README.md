@@ -62,3 +62,33 @@ Residual Material (40 Kg/ Acre) | 256.3489         | 255.7909     | 258.5809
 No. of Watering Episodes        | 2.866116         | 2.868507     | 2.856553
 ---                             | ---              | ---          | ---
 
+# Table 3: Comparative Standard Deviation Analysis for Variables across the Original Dataset, Training Set, and Testing Set
+
+Variables                       | Original Dataset | Training Set | Testing Set
+---                             | ---              | ---          | ---
+Harvest Date                    | 0.805476         | 0.805637     | 0.804879
+---                             | ---              | ---          | ---
+Wheat Variety                   | 3.523892         | 3.517537     |3.549179
+---                             | ---              | ---          | ---
+Seed Quantity (kg)              | 5.811012         | 5.952807     | 5.202641
+---                             | ---              | ---          | ---
+Sowing Date                     | 0.742791         | 0.741065     | 0.749707
+---                             | ---              | ---          | ---
+Organic Manure (kg)             | 0.454628         | 0.452991     | 0.461039
+---                             | ---              | ---          | ---
+Urea Fertilizer (kg)            | 32.3681          | 32.40014     | 32.24083
+---                             | ---              | ---          | ---
+DAP Fertilizer (kg)             | 18.03213         | 18.03141     | 18.02924
+---                             | ---              | ---          | ---
+Soil Type                       | 0.706228         | 0.705203     | 0.710362
+---                             | ---              | ---          | ---
+No. of Pest Sprays              | 0.480772         | 0.482229     | 0.47486
+---                             | ---              | ---          | ---
+No. of Weed Control Sprays      | 0.400447         | 0.396117     | 0.417324
+---                             | ---              | ---          | ---
+Yield (40 Kg/ Acre)             | 9.810252         | 9.804385     | 9.834339
+---                             | ---              | ---          | ---
+Residual Material (40 Kg/ Acre) | 386.834          | 385.6889     | 391.3989
+---                             | ---              | ---          | ---
+No. of Watering Episodes        | 1.793422         | 1.790627     | 1.80465
+---                             | ---              | ---          | ---
