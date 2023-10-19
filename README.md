@@ -1,12 +1,12 @@
 # Economic-Forecasting-model-for-Agriculture-using-genetic-algorithm-and-random-forest-algorithm
 
 # Table 1: Summary of Descriptive Statistics for Variables within the Dataset
-Variables                       | Minimum  | Median   | Maximum 
----                             | ---      | ---      | ---
-Harvest Date                    | 0        | 2        | 22 
----                             | ---      | ---      | ---
+|Variables                       | Minimum  | Median   | Maximum |
+|:-----------------------------:|:--------:|:--------:|:--------:|
+|Harvest Date                    | 0        | 2        | 22 |
+|:-----------------------------:|:--------:|:--------:|:--------:|
 Wheat Variety                   | 1        | 6        | 13 
----                             | ---      | ---      | ---
+|:-----------------------------:|:--------:|:--------:|:--------:|
 Seed Quantity (kg)              | 0        | 3        | 60 
 ---                             | ---      | ---      | ---
 Sowing Date                     | 0        | 3        | 6  
