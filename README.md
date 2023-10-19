@@ -33,8 +33,8 @@ No. of Watering Episodes        | 0.12     | 1400     | 2600
 ---                             | ---      | ---      | ---
 
 # Table 2: Comparative Mean Analysis for Variables across the Original Dataset, Training Set, and Testing Set
-Variables                       | Original Dataset | Training Set | Testing Set
----                             | ---              | ---          | ---
+| Variables                       | Original Dataset | Training Set | Testing Set |
+|:-----------------------------:|:----------------:|:------------:|:-----------:|
 Harvest Date                    | 2.229835         | 2.230554     | 2.226958
 ---                             | ---              | ---          | ---
 Wheat Variety                   | 7.052531         | 7.042987     | 7.090703
