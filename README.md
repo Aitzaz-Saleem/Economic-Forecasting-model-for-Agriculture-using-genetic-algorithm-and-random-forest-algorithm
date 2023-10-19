@@ -111,16 +111,13 @@ Population | R-2   | MAE    | MSE     | RMSE
 n_estimators | max_depth | min_samples_split | min_samples_leaf | mean_squared_error
 ---          | ---       | ---               | ---              | ---
 178          | 42        | 3                 | 1                | 546.686
----          | ---       | ---               | ---              | ---
 
 # Table 6: The table presents training evaluation metrics at the optimal number of estimators
 n_estimators | R-2   | MAE   | MSE     | RMSE
 ---          | ---   | ---   | ---     | ---
 178          | 0.999 | 6.335 | 114.963 | 10.722
----          | ---   | ---   | ---     | ---
 
 # Table 7: The table presents testing evaluation metrics at the optimal number of estimators
 n_estimators | R-2   | MAE    | MSE     | RMSE   | DW Score
 ---          | ---   | ---    | ---     | ---    | ---    
 178          | 0.996 | 15.815 | 546.686 | 23.381 | 2.021
----          | ---   | ---    | ---     | ---    | ---
