@@ -1,21 +1,20 @@
 # Economic-Forecasting-model-for-Agriculture-using-genetic-algorithm-and-random-forest-algorithm
 # Introduction
-**1.** Agriculture's Vital Role: Agriculture assumes a pivotal role in a nation's economic stability and sustenance, serving as the foundation of food security and playing a crucial role in societal well-being.
-**2.** Economic Impact: Beyond nourishment, agriculture fosters rural development, creates employment opportunities, and provides essential raw materials for various industries, contributing to economic diversification.
-**3.** Global Trade Significance: Agriculture plays a crucial role in international commerce, enabling nations to export surpluses and accumulate foreign exchange reserves.
-**4.** Environmental Stewardship: Sustainable agricultural practices can positively impact the environment and biodiversity, promoting harmony between humanity and nature.
-**5.** Symbol of National Identity: Agriculture embodies a nation's self-reliance, cultural heritage, and holistic well-being.
-**6.** Agricultural Significance of Punjab: Punjab heavily relies on wheat production, but faces challenges due to market unpredictability driven by factors like climate, soil conditions, and economic trends.
-**7.** The Need for Advanced Forecasting: Traditional forecasting methods fall short in capturing the nuanced interdependencies in the agri-food system.
-**8.** Innovative Solution: This research introduces an innovative Economic Forecasting Model for Agriculture, focusing on predicting wheat prices in Punjab.
-**9.** Comprehensive Data Sources: The dataset draws from diverse sources, including the Crop Reporting Services of the Government of Punjab, encompassing 26 independent variables like yield, soil characteristics, seed varieties, and water availability.
-**10.** Complexity Demands Advanced Techniques: The dataset's complexity requires an advanced approach to untangle intricate relationships.
-**11.** Random Forest Regressor: This ensemble learning algorithm excels at deciphering nonlinear patterns and interactions in high-dimensional datasets, making it ideal for constructing predictive models.
-**12.** Genetic Algorithm Optimization: The Genetic Algorithm dynamically explores the parameter space of the Random Forest Regressor, enhancing the model's performance.
-Paradigm Shift in Agricultural Forecasting:
-**13.** Limitations of Traditional Approaches: Traditional methods based on historical trends and simplistic models are inadequate for capturing the complexities of agricultural systems.
-**14.** AI-Powered Transformation: AI techniques, particularly the Random Forest Regressor and the Genetic Algorithm, offer the capacity to process large and multidimensional datasets while uncovering intricate nonlinear patterns.
-**15.** Enhanced Decision-Making: By offering more accurate predictions, these techniques empower stakeholders to make informed choices influencing planting schedules, harvest strategies, and market engagement.
+**1.** Agriculture's Vital Role: Agriculture assumes a pivotal role in a nation's economic stability and sustenance, serving as the foundation of food security and playing a crucial role in societal well-being.<br />
+**2.** Economic Impact: Beyond nourishment, agriculture fosters rural development, creates employment opportunities, and provides essential raw materials for various industries, contributing to economic diversification.<br />
+**3.** Global Trade Significance: Agriculture plays a crucial role in international commerce, enabling nations to export surpluses and accumulate foreign exchange reserves.<br />
+**4.** Environmental Stewardship: Sustainable agricultural practices can positively impact the environment and biodiversity, promoting harmony between humanity and nature.<br />
+**5.** Symbol of National Identity: Agriculture embodies a nation's self-reliance, cultural heritage, and holistic well-being.<br />
+**6.** Agricultural Significance of Punjab: Punjab heavily relies on wheat production, but faces challenges due to market unpredictability driven by factors like climate, soil conditions, and economic trends.<br />
+**7.** The Need for Advanced Forecasting: Traditional forecasting methods fall short in capturing the nuanced interdependencies in the agri-food system.<br />
+**8.** Innovative Solution: This research introduces an innovative Economic Forecasting Model for Agriculture, focusing on predicting wheat prices in Punjab.<br />
+**9.** Comprehensive Data Sources: The dataset draws from diverse sources, including the Crop Reporting Services of the Government of Punjab, encompassing 26 independent variables like yield, soil characteristics, seed varieties, and water availability.<br />
+**10.** Complexity Demands Advanced Techniques: The dataset's complexity requires an advanced approach to untangle intricate relationships.<br />
+**11.** Random Forest Regressor: This ensemble learning algorithm excels at deciphering nonlinear patterns and interactions in high-dimensional datasets, making it ideal for constructing predictive models.<br />
+**12.** Genetic Algorithm Optimization: The Genetic Algorithm dynamically explores the parameter space of the Random Forest Regressor, enhancing the model's performance.<br />
+**13.** Limitations of Traditional Approaches: Traditional methods based on historical trends and simplistic models are inadequate for capturing the complexities of agricultural systems.<br />
+**14.** AI-Powered Transformation: AI techniques, particularly the Random Forest Regressor and the Genetic Algorithm, offer the capacity to process large and multidimensional datasets while uncovering intricate nonlinear patterns.<br />
+**15.** Enhanced Decision-Making: By offering more accurate predictions, these techniques empower stakeholders to make informed choices influencing planting schedules, harvest strategies, and market engagement.<br />
 
 # Dataset
 
@@ -97,6 +96,14 @@ This approach employs a Genetic Algorithm to iteratively evolve a population of 
 
 <img width="500" alt="Picture1" src="https://github.com/Aitzaz-Saleem/Economic-Forecasting-model-for-Agriculture-using-genetic-algorithm-and-random-forest-algorithm/assets/139818137/8d9f59c7-759a-4a9b-b657-ebf91ce6783c">
 
+# Evaluating Model Performance
+In this research, a set of four well-established metrics was specifically selected to assess the effectiveness of the regression models considered. These metrics include Mean Squared Error (MSE), R-squared (Coefficient of Determination), Mean Absolute Error (MAE), and Root Mean Squared Error (RMSE). Additionally, the Durbin-Watson score was included to comprehensively evaluate the model's performance.<br />
+- **Mean Squared Error (MSE)**: MSE measures the average squared difference between predicted values and actual values, providing a quantified assessment of prediction accuracy.<br />
+-  MSE = 1/N * Σ(i=1 to N) (y_i - ŷ)^2<br />
+- **Mean Absolute Error (MAE)**: MAE calculates the average absolute differences between predicted and actual values. It assigns equal importance to all errors and is less affected by outliers than MSE.<br />
+- **Root Mean Squared Error (RMSE)**: RMSE, the square root of MSE, measures the average magnitude of errors in predicted values. Lower values of MSE, MAE, and RMSE indicate more accurate predictions, with RMSE being particularly valuable as it shares the unit of the target variable.<br />
+- **R-squared Score**: R-squared quantifies the proportion of variance in the dependent variable predictable from the independent variables. A higher value (ranging from 0 to 1) indicates a better model fit.<br />
+- **Durbin-Watson Score**: This score assesses autocorrelation in regression model residuals. Values near 2 signify no significant autocorrelation.<br />
 
 # Table 4: Comparative Analysis for Evaluating Parameters ( R-2, MAE, MSE ,RMSE and Durbin Watson Score) across the population ranging from 1 to 5
 Population | R-2   | MAE    | MSE     | RMSE
