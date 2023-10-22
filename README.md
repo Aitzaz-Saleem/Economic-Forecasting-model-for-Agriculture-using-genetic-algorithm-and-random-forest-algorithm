@@ -5,7 +5,7 @@
 <br />
 
 # Dataset
-
+<p align="justify">
 - Complexity of Dataset: The dataset consists of 25 independent variables along with the dependent variable "Harvesting Price," offering a detailed perspective on the multifaceted factors influencing wheat pricing in Punjab.
   
 - Temporal Dimension: The variable "Year" tracks the temporal aspects of wheat harvesting, capturing the influence of market conditions, climate, and external factors on pricing.
@@ -31,7 +31,7 @@
 - Role of Watering: "No. of Watering Episodes" underlines the connection between water and agricultural outcomes.
   
 - Rich Dataset: Comprising 44,424 samples, the dataset is divided into a training set (80%) for model development and a testing set (20%) for validation.
-  
+<br />
 
 # Table 1: Summary of Descriptive Statistics for Variables within the Dataset
 Variables                       | Minimum  | Median   | Maximum 
