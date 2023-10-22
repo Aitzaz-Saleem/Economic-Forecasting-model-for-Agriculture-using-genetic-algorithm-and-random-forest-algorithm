@@ -1,5 +1,6 @@
 # Economic-Forecasting-model-for-Agriculture-using-genetic-algorithm-and-random-forest-algorithm
-1. Agriculture's Vital Role: Agriculture assumes a pivotal role in a nation's economic stability and sustenance, serving as the foundation of food security and playing a crucial role in societal well-being.
+# Introduction
+## 1. Agriculture's Vital Role: Agriculture assumes a pivotal role in a nation's economic stability and sustenance, serving as the foundation of food security and playing a crucial role in societal well-being.
 2. Economic Impact: Beyond nourishment, agriculture fosters rural development, creates employment opportunities, and provides essential raw materials for various industries, contributing to economic diversification.
 3. Global Trade Significance: Agriculture plays a crucial role in international commerce, enabling nations to export surpluses and accumulate foreign exchange reserves.
 4. Environmental Stewardship: Sustainable agricultural practices can positively impact the environment and biodiversity, promoting harmony between humanity and nature.
@@ -15,6 +16,38 @@ Paradigm Shift in Agricultural Forecasting:
 13. Limitations of Traditional Approaches: Traditional methods based on historical trends and simplistic models are inadequate for capturing the complexities of agricultural systems.
 14. AI-Powered Transformation: AI techniques, particularly the Random Forest Regressor and the Genetic Algorithm, offer the capacity to process large and multidimensional datasets while uncovering intricate nonlinear patterns.
 15. Enhanced Decision-Making: By offering more accurate predictions, these techniques empower stakeholders to make informed choices influencing planting schedules, harvest strategies, and market engagement.
+
+# Dataset
+
+- Complexity of Dataset: The dataset consists of 25 independent variables along with the dependent variable "Harvesting Price," offering a detailed perspective on the multifaceted factors influencing wheat pricing in Punjab.
+- Temporal Dimension: The variable "Year" tracks the temporal aspects of wheat harvesting, capturing the influence of market conditions, climate, and external factors on pricing.
+- Geographical Insights: Variables like "Division," "District," and "Tehsil" offer geographic insights into soil types, microclimates, and localized market dynamics shaping wheat pricing.
+- Critical Variables: "Harvest Date," "Wheat Variety," and "Seed Type" play key roles in the crop's quality, quantity, and price dynamics.
+- Seed Quantity and Sowing Date: "Seed Quantity (kg)" and "Sowing Date" determine yield potential, while "Sowing Method" influences crop development.
+- Fertilization: Variables like "Organic Manure (Cow Dung) (kg)," "Urea Fertilizer (kg)," and "DAP Fertilizer (kg)" affect crop vitality and economic outcomes.
+- Soil Type and Irrigation: "Soil Type" and "Irrigation Method" define the growing medium and hydraulic conditions, impacting crop development and financial results.
+- Watering and Weed Control: "No. of Watering Times" and "Residual Weed Material (kg)" highlight the interplay between moisture and weeds.
+- Influence of Previous Crop: "Previous Crop" carries the legacy of past crops, impacting nutrient levels and diseases.
+- Seed Treatment and Pest Control: "Seed Treatment," "Number of Pest Sprays," and "Number of Weed Control Sprays" safeguard crops against pests and diseases.
+- Yield and Residual Material: "Yield (40 Kg/ Acre)" and "Residual Material after Harvest (40 Kg/ Acre)" quantify the crop's value.
+- Role of Watering: "No. of Watering Episodes" underlines the connection between water and agricultural outcomes.
+- Rich Dataset: Comprising 44,424 samples, the dataset is divided into a training set (80%) for model development and a testing set (20%) for validation.
+
+# Genetic Algorithm-Enhanced RFR Model (GA-RFR)
+Optimal parameter selection for the Random Forest Regressor (RFR) is of paramount importance to minimize the mean squared error. Attaining a proficient combination of parameters significantly contributes to the reduction of mean squared error, as well as enhances the performance across additional evaluation metrics such as root mean square error, mean absolute error, and Durbin-Watson score. The GA-RFR model amalgamates the merits of both the Random Forest Regressor and Genetic Algorithm (GA) methodologies. The procedural framework for implementing the GA-RFR model is delineated as follows:
+Step#1: Create an initial population of binary-coded chromosomes with a predefined quantity. Each chromosome encodes the presence (1) or absence (0) of specific features.
+Step#2: Assess the fitness of each individual within the population based on the mean squared error resulting from the training of a Random Forest Regression (RFR) model. Individuals with higher fitness values are closer to the desired optimal solution.
+Step#3: Employ Genetic Algorithm (GA) operators. Initially, perform selection to choose pairs of chromosomes for reproduction based on their fitness. Construct a parent population from the selected chromosomes. Subsequently, apply crossover and mutation operations using predetermined GA parameters to generate new candidate individuals with altered characteristics.
+Step#4: Repeat the GA operations described in Step 3 until a predetermined maximum number of iterations is reached.
+Step#5: Once the maximum iteration limit is met or a stopping condition is satisfied, conclude the process. Output the optimal combination of RFR parameters, including n_estimators, min_samples_leaf, min_samples_split, and max_depth, obtained through the evolutionary process of the hybrid model.
+This approach employs a Genetic Algorithm to iteratively evolve a population of binary-encoded chromosomes, optimizing the selection of RFR parameters for enhanced model performance. The process involves fitness evaluation, selection, crossover, and mutation operations, leading to the identification of an optimal parameter configuration.
+
+
+
+
+
+
+
 
 
 
