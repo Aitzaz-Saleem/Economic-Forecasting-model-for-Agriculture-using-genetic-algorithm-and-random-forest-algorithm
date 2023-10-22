@@ -1,21 +1,21 @@
 # Economic-Forecasting-model-for-Agriculture-using-genetic-algorithm-and-random-forest-algorithm
 # Introduction
-1. Agriculture's Vital Role: Agriculture assumes a pivotal role in a nation's economic stability and sustenance, serving as the foundation of food security and playing a crucial role in societal well-being.
-2. Economic Impact: Beyond nourishment, agriculture fosters rural development, creates employment opportunities, and provides essential raw materials for various industries, contributing to economic diversification.
-3. Global Trade Significance: Agriculture plays a crucial role in international commerce, enabling nations to export surpluses and accumulate foreign exchange reserves.
-4. Environmental Stewardship: Sustainable agricultural practices can positively impact the environment and biodiversity, promoting harmony between humanity and nature.
-5. Symbol of National Identity: Agriculture embodies a nation's self-reliance, cultural heritage, and holistic well-being.
-6. Agricultural Significance of Punjab: Punjab heavily relies on wheat production, but faces challenges due to market unpredictability driven by factors like climate, soil conditions, and economic trends.
-7. The Need for Advanced Forecasting: Traditional forecasting methods fall short in capturing the nuanced interdependencies in the agri-food system.
-8. Innovative Solution: This research introduces an innovative Economic Forecasting Model for Agriculture, focusing on predicting wheat prices in Punjab.
-9. Comprehensive Data Sources: The dataset draws from diverse sources, including the Crop Reporting Services of the Government of Punjab, encompassing 26 independent variables like yield, soil characteristics, seed varieties, and water availability.
-10. Complexity Demands Advanced Techniques: The dataset's complexity requires an advanced approach to untangle intricate relationships.
-11. Random Forest Regressor: This ensemble learning algorithm excels at deciphering nonlinear patterns and interactions in high-dimensional datasets, making it ideal for constructing predictive models.
-12. Genetic Algorithm Optimization: The Genetic Algorithm dynamically explores the parameter space of the Random Forest Regressor, enhancing the model's performance.
+**1.** Agriculture's Vital Role: Agriculture assumes a pivotal role in a nation's economic stability and sustenance, serving as the foundation of food security and playing a crucial role in societal well-being.
+**2.** Economic Impact: Beyond nourishment, agriculture fosters rural development, creates employment opportunities, and provides essential raw materials for various industries, contributing to economic diversification.
+**3.** Global Trade Significance: Agriculture plays a crucial role in international commerce, enabling nations to export surpluses and accumulate foreign exchange reserves.
+**4.** Environmental Stewardship: Sustainable agricultural practices can positively impact the environment and biodiversity, promoting harmony between humanity and nature.
+**5.** Symbol of National Identity: Agriculture embodies a nation's self-reliance, cultural heritage, and holistic well-being.
+**6.** Agricultural Significance of Punjab: Punjab heavily relies on wheat production, but faces challenges due to market unpredictability driven by factors like climate, soil conditions, and economic trends.
+**7.** The Need for Advanced Forecasting: Traditional forecasting methods fall short in capturing the nuanced interdependencies in the agri-food system.
+**8.** Innovative Solution: This research introduces an innovative Economic Forecasting Model for Agriculture, focusing on predicting wheat prices in Punjab.
+**9.** Comprehensive Data Sources: The dataset draws from diverse sources, including the Crop Reporting Services of the Government of Punjab, encompassing 26 independent variables like yield, soil characteristics, seed varieties, and water availability.
+**10.** Complexity Demands Advanced Techniques: The dataset's complexity requires an advanced approach to untangle intricate relationships.
+**11.** Random Forest Regressor: This ensemble learning algorithm excels at deciphering nonlinear patterns and interactions in high-dimensional datasets, making it ideal for constructing predictive models.
+**12.** Genetic Algorithm Optimization: The Genetic Algorithm dynamically explores the parameter space of the Random Forest Regressor, enhancing the model's performance.
 Paradigm Shift in Agricultural Forecasting:
-13. Limitations of Traditional Approaches: Traditional methods based on historical trends and simplistic models are inadequate for capturing the complexities of agricultural systems.
-14. AI-Powered Transformation: AI techniques, particularly the Random Forest Regressor and the Genetic Algorithm, offer the capacity to process large and multidimensional datasets while uncovering intricate nonlinear patterns.
-15. Enhanced Decision-Making: By offering more accurate predictions, these techniques empower stakeholders to make informed choices influencing planting schedules, harvest strategies, and market engagement.
+**13.** Limitations of Traditional Approaches: Traditional methods based on historical trends and simplistic models are inadequate for capturing the complexities of agricultural systems.
+**14.** AI-Powered Transformation: AI techniques, particularly the Random Forest Regressor and the Genetic Algorithm, offer the capacity to process large and multidimensional datasets while uncovering intricate nonlinear patterns.
+**15.** Enhanced Decision-Making: By offering more accurate predictions, these techniques empower stakeholders to make informed choices influencing planting schedules, harvest strategies, and market engagement.
 
 # Dataset
 
@@ -36,7 +36,7 @@ Paradigm Shift in Agricultural Forecasting:
 # Table 1: Summary of Descriptive Statistics for Variables within the Dataset
 Variables                       | Minimum  | Median   | Maximum 
 ---                             | ---      | ---      | ---
-|Harvest Date                   | 0        | 2        | 22 
+Harvest Date                    | 0        | 2        | 22 
 Wheat Variety                   | 1        | 6        | 13 
 Seed Quantity (kg)              | 0        | 3        | 60 
 Sowing Date                     | 0        | 3        | 6  
@@ -88,11 +88,11 @@ No. of Watering Episodes        | 1.793422         | 1.790627     | 1.80465
 
 # Genetic Algorithm-Enhanced RFR Model (GA-RFR)
 Optimal parameter selection for the Random Forest Regressor (RFR) is of paramount importance to minimize the mean squared error. Attaining a proficient combination of parameters significantly contributes to the reduction of mean squared error, as well as enhances the performance across additional evaluation metrics such as root mean square error, mean absolute error, and Durbin-Watson score. The GA-RFR model amalgamates the merits of both the Random Forest Regressor and Genetic Algorithm (GA) methodologies. The procedural framework for implementing the GA-RFR model is delineated as follows:<br />
-Step#1: Create an initial population of binary-coded chromosomes with a predefined quantity. Each chromosome encodes the presence (1) or absence (0) of specific features.<br />
-Step#2: Assess the fitness of each individual within the population based on the mean squared error resulting from the training of a Random Forest Regression (RFR) model. Individuals with higher fitness values are closer to the desired optimal solution.<br />
-Step#3: Employ Genetic Algorithm (GA) operators. Initially, perform selection to choose pairs of chromosomes for reproduction based on their fitness. Construct a parent population from the selected chromosomes. Subsequently, apply crossover and mutation operations using predetermined GA parameters to generate new candidate individuals with altered characteristics.<br />
-Step#4: Repeat the GA operations described in Step 3 until a predetermined maximum number of iterations is reached.<br />
-Step#5: Once the maximum iteration limit is met or a stopping condition is satisfied, conclude the process. Output the optimal combination of RFR parameters, including n_estimators, min_samples_leaf, min_samples_split, and max_depth, obtained through the evolutionary process of the hybrid model.<br />
+**Step#1:** Create an initial population of binary-coded chromosomes with a predefined quantity. Each chromosome encodes the presence (1) or absence (0) of specific features.<br />
+**Step#2:** Assess the fitness of each individual within the population based on the mean squared error resulting from the training of a Random Forest Regression (RFR) model. Individuals with higher fitness values are closer to the desired optimal solution.<br />
+**Step#3:** Employ Genetic Algorithm (GA) operators. Initially, perform selection to choose pairs of chromosomes for reproduction based on their fitness. Construct a parent population from the selected chromosomes. Subsequently, apply crossover and mutation operations using predetermined GA parameters to generate new candidate individuals with altered characteristics.<br />
+**Step#4:** Repeat the GA operations described in Step 3 until a predetermined maximum number of iterations is reached.<br />
+**Step#5:** Once the maximum iteration limit is met or a stopping condition is satisfied, conclude the process. Output the optimal combination of RFR parameters, including n_estimators, min_samples_leaf, min_samples_split, and max_depth, obtained through the evolutionary process of the hybrid model.<br />
 This approach employs a Genetic Algorithm to iteratively evolve a population of binary-encoded chromosomes, optimizing the selection of RFR parameters for enhanced model performance. The process involves fitness evaluation, selection, crossover, and mutation operations, leading to the identification of an optimal parameter configuration.
 
 <img width="500" alt="Picture1" src="https://github.com/Aitzaz-Saleem/Economic-Forecasting-model-for-Agriculture-using-genetic-algorithm-and-random-forest-algorithm/assets/139818137/8d9f59c7-759a-4a9b-b657-ebf91ce6783c">
