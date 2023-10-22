@@ -5,32 +5,10 @@
 <br />
 
 ## Dataset
-- Complexity of Dataset: The dataset consists of 25 independent variables along with the dependent variable "Harvesting Price," offering a detailed perspective on the multifaceted factors influencing wheat pricing in Punjab.
-  
-- Temporal Dimension: The variable "Year" tracks the temporal aspects of wheat harvesting, capturing the influence of market conditions, climate, and external factors on pricing.
-  
-- Geographical Insights: Variables like "Division," "District," and "Tehsil" offer geographic insights into soil types, microclimates, and localized market dynamics shaping wheat pricing.
-  
-- Critical Variables: "Harvest Date," "Wheat Variety," and "Seed Type" play key roles in the crop's quality, quantity, and price dynamics.
-  
-- Seed Quantity and Sowing Date: "Seed Quantity (kg)" and "Sowing Date" determine yield potential, while "Sowing Method" influences crop development.
-  
-- Fertilization: Variables like "Organic Manure (Cow Dung) (kg)," "Urea Fertilizer (kg)," and "DAP Fertilizer (kg)" affect crop vitality and economic outcomes.
-  
-- Soil Type and Irrigation: "Soil Type" and "Irrigation Method" define the growing medium and hydraulic conditions, impacting crop development and financial results.
-  
-- Watering and Weed Control: "No. of Watering Times" and "Residual Weed Material (kg)" highlight the interplay between moisture and weeds.
-  
-- Influence of Previous Crop: "Previous Crop" carries the legacy of past crops, impacting nutrient levels and diseases.
-  
-- Seed Treatment and Pest Control: "Seed Treatment," "Number of Pest Sprays," and "Number of Weed Control Sprays" safeguard crops against pests and diseases.
-  
-- Yield and Residual Material: "Yield (40 Kg/ Acre)" and "Residual Material after Harvest (40 Kg/ Acre)" quantify the crop's value.
-  
-- Role of Watering: "No. of Watering Episodes" underlines the connection between water and agricultural outcomes.
-  
-- Rich Dataset: Comprising 44,424 samples, the dataset is divided into a training set (80%) for model development and a testing set (20%) for validation.
-<br />
+<p align="justify">
+The dataset is rich and multifaceted, featuring 25 independent variables and the dependent variable "Harvesting Price." It provides a comprehensive view of the factors influencing wheat pricing in Punjab. The temporal dimension is captured by the "Year" variable, reflecting market conditions, climate, and external factors over time. Geographical insights are offered through variables like "Division," "District," and "Tehsil," shedding light on soil types, microclimates, and localized market dynamics. Critical variables, including "Harvest Date," "Wheat Variety," and "Seed Type," play pivotal roles in crop quality, quantity, and pricing. "Seed Quantity (kg)" and "Sowing Date" determine yield potential, while "Sowing Method" influences crop development. Fertilization variables, such as "Organic Manure (Cow Dung) (kg)," "Urea Fertilizer (kg)," and "DAP Fertilizer (kg)," impact crop vitality and economic outcomes. "Soil Type" and "Irrigation Method" define growing conditions, while "No. of Watering Times" and "Residual Weed Material (kg)" underscore the relationship between moisture and weed control. "Previous Crop" carries the legacy of past crops, impacting nutrient levels and disease susceptibility. Variables like "Seed Treatment," "Number of Pest Sprays," and "Number of Weed Control Sprays" safeguard crops. "Yield (40 Kg/Acre)" and "Residual Material after Harvest (40 Kg/Acre)" quantify the crop's value. "No. of Watering Episodes" highlights the significance of water in agricultural outcomes. This dataset comprises 44,424 samples, divided into a training set (80%) for model development and a testing set (20%) for validation. It offers a wealth of insights into the complex dynamics of wheat pricing and production in Punjab.
+</p>
+
 
 ### Table 1: Summary of Descriptive Statistics for Variables within the Dataset
 Variables                       | Minimum  | Median   | Maximum 
@@ -103,16 +81,14 @@ No. of Watering Episodes        | 1.793422         | 1.790627     | 1.80465
 
 
 ## Evaluating Model Performance
-In this research, a set of four well-established metrics was specifically selected to assess the effectiveness of the regression models considered. These metrics include Mean Squared Error (MSE), R-squared (Coefficient of Determination), Mean Absolute Error (MAE), and Root Mean Squared Error (RMSE). Additionally, the Durbin-Watson score was included to comprehensively evaluate the model's performance.<br />
-- **Mean Squared Error (MSE)**: MSE measures the average squared difference between predicted values and actual values, providing a quantified assessment of prediction accuracy.<br />
-
-- **Mean Absolute Error (MAE)**: MAE calculates the average absolute differences between predicted and actual values. It assigns equal importance to all errors and is less affected by outliers than MSE.<br />
-
-- **Root Mean Squared Error (RMSE)**: RMSE, the square root of MSE, measures the average magnitude of errors in predicted values. Lower values of MSE, MAE, and RMSE indicate more accurate predictions, with RMSE being particularly valuable as it shares the unit of the target variable.<br />
-
-- **R-squared Score**: R-squared quantifies the proportion of variance in the dependent variable predictable from the independent variables. A higher value (ranging from 0 to 1) indicates a better model fit.<br />
-
-- **Durbin-Watson Score**: This score assesses autocorrelation in regression model residuals. Values near 2 signify no significant autocorrelation.<br />
+<p align="justify">In this research, a set of four well-established metrics was specifically selected to assess the effectiveness of the regression models considered. These metrics include Mean Squared Error (MSE), R-squared (Coefficient of Determination), Mean Absolute Error (MAE), and Root Mean Squared Error (RMSE). Additionally, the Durbin-Watson score was included to comprehensively evaluate the model's performance.
+1: Mean Squared Error (MSE)**: MSE measures the average squared difference between predicted values and actual values, providing a quantified assessment of prediction accuracy.<br/>
+2: Mean Absolute Error (MAE)**: MAE calculates the average absolute differences between predicted and actual values. It assigns equal importance to all errors and is less affected by outliers than MSE.
+3: Root Mean Squared Error (RMSE)**: RMSE, the square root of MSE, measures the average magnitude of errors in predicted values. Lower values of MSE, MAE, and RMSE indicate more accurate predictions, with RMSE being particularly valuable as it shares the unit of the target variable.
+4: R-squared Score**: R-squared quantifies the proportion of variance in the dependent variable predictable from the independent variables. A higher value (ranging from 0 to 1) indicates a better model fit.
+5: Durbin-Watson Score**: This score assesses autocorrelation in regression model residuals. Values near 2 signify no significant autocorrelation.
+</p> 
+<br />
 
 ## Parameter Settings
 <p align="justify">
