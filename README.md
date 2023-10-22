@@ -6,7 +6,7 @@
 
 ## Dataset
 <p align="justify">
-The dataset is rich and multifaceted, featuring 25 independent variables and the dependent variable "Harvesting Price." It provides a comprehensive view of the factors influencing wheat pricing in Punjab. The temporal dimension is captured by the "Year" variable, reflecting market conditions, climate, and external factors over time. Geographical insights are offered through variables like "Division," "District," and "Tehsil," shedding light on soil types, microclimates, and localized market dynamics. Critical variables, including "Harvest Date," "Wheat Variety," and "Seed Type," play pivotal roles in crop quality, quantity, and pricing. "Seed Quantity (kg)" and "Sowing Date" determine yield potential, while "Sowing Method" influences crop development. Fertilization variables, such as "Organic Manure (Cow Dung) (kg)," "Urea Fertilizer (kg)," and "DAP Fertilizer (kg)," impact crop vitality and economic outcomes. "Soil Type" and "Irrigation Method" define growing conditions, while "No. of Watering Times" and "Residual Weed Material (kg)" underscore the relationship between moisture and weed control. "Previous Crop" carries the legacy of past crops, impacting nutrient levels and disease susceptibility. Variables like "Seed Treatment," "Number of Pest Sprays," and "Number of Weed Control Sprays" safeguard crops. "Yield (40 Kg/Acre)" and "Residual Material after Harvest (40 Kg/Acre)" quantify the crop's value. "No. of Watering Episodes" highlights the significance of water in agricultural outcomes. This dataset comprises 44,424 samples, divided into a training set (80%) for model development and a testing set (20%) for validation. It offers a wealth of insights into the complex dynamics of wheat pricing and production in Punjab.
+The dataset is rich and multi-dimentional, featuring 25 independent variables and the dependent variable "Harvesting Price." It provides a comprehensive view of the factors influencing wheat pricing in Punjab. The temporal dimension is captured by the "Year" variable, reflecting market conditions, climate, and external factors over time. Geographical insights are offered through variables like "Division," "District," and "Tehsil," shedding light on soil types, microclimates, and localized market dynamics. Critical variables, including "Harvest Date," "Wheat Variety," and "Seed Type," play pivotal roles in crop quality, quantity, and pricing. "Seed Quantity (kg)" and "Sowing Date" determine yield potential, while "Sowing Method" influences crop development. Fertilization variables, such as "Organic Manure (Cow Dung) (kg)," "Urea Fertilizer (kg)," and "DAP Fertilizer (kg)," impact crop vitality and economic outcomes. "Soil Type" and "Irrigation Method" define growing conditions, while "No. of Watering Times" and "Residual Weed Material (kg)" underscore the relationship between moisture and weed control. "Previous Crop" carries the legacy of past crops, impacting nutrient levels and disease susceptibility. Variables like "Seed Treatment," "Number of Pest Sprays," and "Number of Weed Control Sprays" safeguard crops. "Yield (40 Kg/Acre)" and "Residual Material after Harvest (40 Kg/Acre)" quantify the crop's value. "No. of Watering Episodes" highlights the significance of water in agricultural outcomes. This dataset comprises 44,424 samples, divided into a training set (80%) for model development and a testing set (20%) for validation. It offers a wealth of insights into the complex dynamics of wheat pricing and production in Punjab.
 </p>
 
 
@@ -64,17 +64,17 @@ Residual Material (40 Kg/ Acre) | 386.834          | 385.6889     | 391.3989
 No. of Watering Episodes        | 1.793422         | 1.790627     | 1.80465
 
 ## Genetic Algorithm-Enhanced RFR Model (GA-RFR)
-<p align="justify">Optimal parameter selection for the Random Forest Regressor (RFR) is of paramount importance to minimize the mean squared error. Attaining a proficient combination of parameters significantly contributes to the reduction of mean squared error, as well as enhances the performance across additional evaluation metrics such as root mean square error, mean absolute error, and Durbin-Watson score. The GA-RFR model amalgamates the merits of both the Random Forest Regressor and Genetic Algorithm (GA) methodologies. The procedural framework for implementing the GA-RFR model is delineated as follows:</p>
-
-**Step#1:** Create an initial population of binary-coded chromosomes with a predefined quantity. Each chromosome encodes the presence (1) or absence (0) of specific features.<br/>
-**Step#2:** Assess the fitness of each individual within the population based on the mean squared error resulting from the training of a Random Forest Regression (RFR) model. Individuals with higher fitness values are closer to the desired optimal solution.<br />
-**Step#3:** Employ Genetic Algorithm (GA) operators. Initially, perform selection to choose pairs of chromosomes for reproduction based on their fitness. Construct a parent population from the selected chromosomes. Subsequently, apply crossover and mutation operations using predetermined GA parameters to generate new candidate individuals with altered characteristics.<br />
-**Step#4:** Repeat the GA operations described in Step 3 until a predetermined maximum number of iterations is reached.
-<br />
-**Step#5:** Once the maximum iteration limit is met or a stopping condition is satisfied, conclude the process. Output the optimal combination of RFR parameters, including n_estimators, min_samples_leaf, min_samples_split, and max_depth, obtained through the evolutionary process of the hybrid model.<br />
-<br />
-<p align="justify">This approach employs a Genetic Algorithm to iteratively evolve a population of binary-encoded chromosomes, optimizing the selection of RFR parameters for enhanced model performance. The process involves fitness evaluation, selection, crossover, and mutation operations, leading to the identification of an optimal parameter configuration.</p>
-<br />
+<p align="justify">Optimal parameter selection for the Random Forest Regressor (RFR) is of paramount importance to minimize the mean squared error. Attaining a proficient combination of parameters significantly contributes to the reduction of mean squared error, as well as enhances the performance across additional evaluation metrics such as root mean square error, mean absolute error, and Durbin-Watson score. The GA-RFR model amalgamates the merits of both the Random Forest Regressor and Genetic Algorithm (GA) methodologies. The procedural framework for implementing the GA-RFR model is delineated as follows:
+Step#1: Create an initial population of binary-coded chromosomes with a predefined quantity. Each chromosome encodes the presence (1) or absence (0) of specific features.<br/>
+Step#2: Assess the fitness of each individual within the population based on the mean squared error resulting from the training of a Random Forest Regression (RFR) model. Individuals with higher fitness values are closer to the desired optimal solution.<b/>
+Step#3: Employ Genetic Algorithm (GA) operators. Initially, perform selection to choose pairs of chromosomes for reproduction based on their fitness. Construct a parent population from the selected chromosomes. Subsequently, apply crossover and mutation operations using predetermined GA parameters to generate new candidate individuals with altered characteristics.<br />
+Step#4: Repeat the GA operations described in Step 3 until a predetermined maximum number of iterations is reached.
+<br/>
+Step#5: Once the maximum iteration limit is met or a stopping condition is satisfied, conclude the process. Output the optimal combination of RFR parameters, including n_estimators, min_samples_leaf, min_samples_split, and max_depth, obtained through the evolutionary process of the hybrid model.<br />
+<br/>
+This approach employs a Genetic Algorithm to iteratively evolve a population of binary-encoded chromosomes, optimizing the selection of RFR parameters for enhanced model performance. The process involves fitness evaluation, selection, crossover, and mutation operations, leading to the identification of an optimal parameter configuration.
+</p>
+<br/>
 
   <img width="500" alt="Picture1" src="https://github.com/Aitzaz-Saleem/Economic-Forecasting-model-for-Agriculture-using-genetic-algorithm-and-random-forest-algorithm/assets/139818137/8d9f59c7-759a-4a9b-b657-ebf91ce6783c">
 
@@ -82,13 +82,13 @@ No. of Watering Episodes        | 1.793422         | 1.790627     | 1.80465
 
 ## Evaluating Model Performance
 <p align="justify">In this research, a set of four well-established metrics was specifically selected to assess the effectiveness of the regression models considered. These metrics include Mean Squared Error (MSE), R-squared (Coefficient of Determination), Mean Absolute Error (MAE), and Root Mean Squared Error (RMSE). Additionally, the Durbin-Watson score was included to comprehensively evaluate the model's performance.
-1: Mean Squared Error (MSE)**: MSE measures the average squared difference between predicted values and actual values, providing a quantified assessment of prediction accuracy.<br/>
-2: Mean Absolute Error (MAE)**: MAE calculates the average absolute differences between predicted and actual values. It assigns equal importance to all errors and is less affected by outliers than MSE.
-3: Root Mean Squared Error (RMSE)**: RMSE, the square root of MSE, measures the average magnitude of errors in predicted values. Lower values of MSE, MAE, and RMSE indicate more accurate predictions, with RMSE being particularly valuable as it shares the unit of the target variable.
-4: R-squared Score**: R-squared quantifies the proportion of variance in the dependent variable predictable from the independent variables. A higher value (ranging from 0 to 1) indicates a better model fit.
-5: Durbin-Watson Score**: This score assesses autocorrelation in regression model residuals. Values near 2 signify no significant autocorrelation.
+1: Mean Squared Error (MSE): MSE measures the average squared difference between predicted values and actual values, providing a quantified assessment of prediction accuracy.<br/>
+2: Mean Absolute Error (MAE): MAE calculates the average absolute differences between predicted and actual values. It assigns equal importance to all errors and is less affected by outliers than MSE.<br/>
+3: Root Mean Squared Error (RMSE): RMSE, the square root of MSE, measures the average magnitude of errors in predicted values. Lower values of MSE, MAE, and RMSE indicate more accurate predictions, with RMSE being particularly valuable as it shares the unit of the target variable.<br/>
+4: R-squared Score: R-squared quantifies the proportion of variance in the dependent variable predictable from the independent variables. A higher value (ranging from 0 to 1) indicates a better model fit.<br/>
+5: Durbin-Watson Score: This score assesses autocorrelation in regression model residuals. Values near 2 signify no significant autocorrelation.
 </p> 
-<br />
+<br/>
 
 ## Parameter Settings
 <p align="justify">
