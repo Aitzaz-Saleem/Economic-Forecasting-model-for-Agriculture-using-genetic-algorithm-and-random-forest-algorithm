@@ -1,10 +1,10 @@
 # Economic-Forecasting-model-for-Agriculture-using-genetic-algorithm-and-random-forest-algorithm
-# Introduction
+## Introduction
 <p align="justify"> Agriculture is a backbone for national stability, food security, and economic diversification. It fosters rural development, employment, and international trade. Sustainable practices benefit both the environment and national identity. Punjab relies heavily on wheat production but faces market uncertainties due to various factors. Traditional forecasting methods fall short. </p>
 <p align="justify"> Our innovative Economic Forecasting Model for Agriculture focuses on predicting wheat prices in Punjab, leveraging a comprehensive dataset. To handle its complexity, we use the Random Forest Regressor and Genetic Algorithm Optimization, superior to traditional approaches. These AI techniques empower stakeholders with precise predictions, enhancing decision-making for planting, harvesting, and market engagement in agricultural economics.</p>
 <br />
 
-# Dataset
+## Dataset
 - Complexity of Dataset: The dataset consists of 25 independent variables along with the dependent variable "Harvesting Price," offering a detailed perspective on the multifaceted factors influencing wheat pricing in Punjab.
   
 - Temporal Dimension: The variable "Year" tracks the temporal aspects of wheat harvesting, capturing the influence of market conditions, climate, and external factors on pricing.
@@ -32,7 +32,7 @@
 - Rich Dataset: Comprising 44,424 samples, the dataset is divided into a training set (80%) for model development and a testing set (20%) for validation.
 <br />
 
-# Table 1: Summary of Descriptive Statistics for Variables within the Dataset
+### Table 1: Summary of Descriptive Statistics for Variables within the Dataset
 Variables                       | Minimum  | Median   | Maximum 
 ---                             | ---      | ---      | ---
 Harvest Date                    | 0        | 2        | 22 
@@ -50,7 +50,7 @@ Residual Material (40 Kg/ Acre) | 0.680625 | 102.0938 | 1592.051
 No. of Watering Episodes        | 0        | 3        | 10 
 No. of Watering Episodes        | 0.12     | 1400     | 2600
 
-# Table 2: Comparative Mean Analysis for Variables across the Original Dataset, Training Set, and Testing Set
+### Table 2: Comparative Mean Analysis for Variables across the Original Dataset, Training Set, and Testing Set
 Variables                       | Original Dataset | Training Set | Testing Set 
 ---                             | ---              | ---          | ---
 Harvest Date                    | 2.229835         | 2.230554     | 2.226958
@@ -67,7 +67,7 @@ Yield (40 Kg/ Acre)             | 34.49118         | 34.49175     | 34.48893
 Residual Material (40 Kg/ Acre) | 256.3489         | 255.7909     | 258.5809
 No. of Watering Episodes        | 2.866116         | 2.868507     | 2.856553
 
-# Table 3: Comparative Standard Deviation Analysis for Variables across the Original Dataset, Training Set, and Testing Set
+### Table 3: Comparative Standard Deviation Analysis for Variables across the Original Dataset, Training Set, and Testing Set
 
 Variables                       | Original Dataset | Training Set | Testing Set
 ---                             | ---              | ---          | ---
@@ -85,9 +85,8 @@ Yield (40 Kg/ Acre)             | 9.810252         | 9.804385     | 9.834339
 Residual Material (40 Kg/ Acre) | 386.834          | 385.6889     | 391.3989
 No. of Watering Episodes        | 1.793422         | 1.790627     | 1.80465
 
-# Genetic Algorithm-Enhanced RFR Model (GA-RFR)
+## Genetic Algorithm-Enhanced RFR Model (GA-RFR)
 <p align="justify">Optimal parameter selection for the Random Forest Regressor (RFR) is of paramount importance to minimize the mean squared error. Attaining a proficient combination of parameters significantly contributes to the reduction of mean squared error, as well as enhances the performance across additional evaluation metrics such as root mean square error, mean absolute error, and Durbin-Watson score. The GA-RFR model amalgamates the merits of both the Random Forest Regressor and Genetic Algorithm (GA) methodologies. The procedural framework for implementing the GA-RFR model is delineated as follows:</p><br />
-
 **Step#1:** Create an initial population of binary-coded chromosomes with a predefined quantity. Each chromosome encodes the presence (1) or absence (0) of specific features.<br/>
 **Step#2:** Assess the fitness of each individual within the population based on the mean squared error resulting from the training of a Random Forest Regression (RFR) model. Individuals with higher fitness values are closer to the desired optimal solution.<br />
 **Step#3:** Employ Genetic Algorithm (GA) operators. Initially, perform selection to choose pairs of chromosomes for reproduction based on their fitness. Construct a parent population from the selected chromosomes. Subsequently, apply crossover and mutation operations using predetermined GA parameters to generate new candidate individuals with altered characteristics.<br />
@@ -102,7 +101,7 @@ No. of Watering Episodes        | 1.793422         | 1.790627     | 1.80465
 
 
 
-# Evaluating Model Performance
+## Evaluating Model Performance
 In this research, a set of four well-established metrics was specifically selected to assess the effectiveness of the regression models considered. These metrics include Mean Squared Error (MSE), R-squared (Coefficient of Determination), Mean Absolute Error (MAE), and Root Mean Squared Error (RMSE). Additionally, the Durbin-Watson score was included to comprehensively evaluate the model's performance.<br />
 - **Mean Squared Error (MSE)**: MSE measures the average squared difference between predicted values and actual values, providing a quantified assessment of prediction accuracy.<br />
 
@@ -114,7 +113,7 @@ In this research, a set of four well-established metrics was specifically select
 
 - **Durbin-Watson Score**: This score assesses autocorrelation in regression model residuals. Values near 2 signify no significant autocorrelation.<br />
 
-# Parameter Settings
+## Parameter Settings
 - **Parameter Significance**: The optimization process's success relies on the meticulous selection of parameters, which significantly shape the course and efficiency of the genetic algorithm (GA).<br />
 
 - **Variable Bounds**: The 'varbound' array defines boundaries for the four optimization variables, constraining the search space and guiding the GA toward regions where optimal solutions are likely to be found.<br />
@@ -133,7 +132,7 @@ In this research, a set of four well-established metrics was specifically select
 
 - **Hyperparameter Configurations**: Results presented in the form of hyperparameter configurations and corresponding Mean Squared Error (MSE) values offer a comprehensive view of the GA's optimization journey, highlighting the interplay between hyperparameters and prediction accuracy.<br />
 
-# Table 4: Comparative Analysis for Evaluating Parameters ( R-2, MAE, MSE ,RMSE and Durbin Watson Score) across the population ranging from 1 to 5
+### Table 4: Comparative Analysis for Evaluating Parameters ( R-2, MAE, MSE ,RMSE and Durbin Watson Score) across the population ranging from 1 to 5
 Population | R-2   | MAE    | MSE     | RMSE
 ---        | ---   | ---    | ---     | ---
 1          | 0.996 | 17.227 | 633.667 | 25.173
@@ -142,12 +141,12 @@ Population | R-2   | MAE    | MSE     | RMSE
 4          | 0.996 | 16.427 | 578.278 | 24.047
 5          | 0.996 | 15.815 | 546.686 | 23.381
 
-# Table 5: The table presents the optimal parameters of the (RFR) model when applied to a population size of 5
+### Table 5: The table presents the optimal parameters of the (RFR) model when applied to a population size of 5
 n_estimators | max_depth | min_samples_split | min_samples_leaf | mean_squared_error
 ---          | ---       | ---               | ---              | ---
 178          | 42        | 3                 | 1                | 546.686
 
-# RFR Model Performance Analysis
+## RFR Model Performance Analysis
 - **Model Evaluation on Traning Dataset**: Following the training of the Random Forest Regressor on the training dataset, a comprehensive set of evaluation metrics was computed to gauge the model's proficiency in capturing underlying relationships within the data.
 
 - **R-squared (R-2) Score**: The model achieved an impressive R-squared score of 0.999, denoting its exceptional ability to elucidate intricate patterns within the training data. This score corresponds to explaining approximately 99.6% of the dataset's variance, highlighting the model's accuracy in aligning predictions with actual values.
@@ -158,7 +157,7 @@ n_estimators | max_depth | min_samples_split | min_samples_leaf | mean_squared_e
 
 - **Root Mean Squared Error (RMSE)**: The RMSE of 10.722 offers a measure of prediction error in the original units of the dependent variable. A lower RMSE reinforces the model's proficiency in generating predictions with smaller deviations from actual outcomes, enhancing its potential to provide dependable forecasts in the field of agricultural economics.
   
-# Table 6: The table presents training evaluation metrics at the optimal number of estimators
+### Table 6: The table presents training evaluation metrics at the optimal number of estimators
 n_estimators | R-2   | MAE   | MSE     | RMSE
 ---          | ---   | ---   | ---     | ---
 178          | 0.999 | 6.335 | 114.963 | 10.722
@@ -176,7 +175,7 @@ n_estimators | R-2   | MAE   | MSE     | RMSE
 - **Durbin Watson Score**: The Durbin Watson score of 2.021 plays a significant role in detecting potential autocorrelation in the residuals of the regression model. Its value suggests minimal positive autocorrelation among prediction errors, hinting at potential temporal patterns or dependencies within the data. Values close to 2 indicate a lack of significant autocorrelation, while deviations indicate varying degrees of autocorrelation.
 
 
-# Table 7: The table presents testing evaluation metrics at the optimal number of estimators
+### Table 7: The table presents testing evaluation metrics at the optimal number of estimators
 n_estimators | R-2   | MAE    | MSE     | RMSE   | DW Score
 ---          | ---   | ---    | ---     | ---    | ---    
 178          | 0.996 | 15.815 | 546.686 | 23.381 | 2.021
