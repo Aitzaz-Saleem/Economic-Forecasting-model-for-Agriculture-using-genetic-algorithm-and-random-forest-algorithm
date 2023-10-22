@@ -80,14 +80,14 @@ This approach employs a Genetic Algorithm to iteratively evolve a population of 
 
 
 ## Evaluating Model Performance
-<p align="justify">In this research, a set of four well-established metrics was specifically selected to assess the effectiveness of the regression models considered. These metrics include Mean Squared Error (MSE), R-squared (Coefficient of Determination), Mean Absolute Error (MAE), and Root Mean Squared Error (RMSE). Additionally, the Durbin-Watson score was included to comprehensively evaluate the model's performance.<br/>
-1: Mean Squared Error (MSE): MSE measures the average squared difference between predicted values and actual values, providing a quantified assessment of prediction accuracy.<br/>
-2: Mean Absolute Error (MAE): MAE calculates the average absolute differences between predicted and actual values. It assigns equal importance to all errors and is less affected by outliers than MSE.<br/>
-3: Root Mean Squared Error (RMSE): RMSE, the square root of MSE, measures the average magnitude of errors in predicted values. Lower values of MSE, MAE, and RMSE indicate more accurate predictions, with RMSE being particularly valuable as it shares the unit of the target variable.<br/>
-4: R-squared Score: R-squared quantifies the proportion of variance in the dependent variable predictable from the independent variables. A higher value (ranging from 0 to 1) indicates a better model fit.<br/>
+<p align="justify">In this research, a set of four well-established metrics was specifically selected to assess the effectiveness of the regression models considered. These metrics include Mean Squared Error (MSE), R-squared (Coefficient of Determination), Mean Absolute Error (MAE), and Root Mean Squared Error (RMSE). Additionally, the Durbin-Watson score was included to comprehensively evaluate the model's performance.<br>
+1: Mean Squared Error (MSE): MSE measures the average squared difference between predicted values and actual values, providing a quantified assessment of prediction accuracy.<br>
+2: Mean Absolute Error (MAE): MAE calculates the average absolute differences between predicted and actual values. It assigns equal importance to all errors and is less affected by outliers than MSE.<br>
+3: Root Mean Squared Error (RMSE): RMSE, the square root of MSE, measures the average magnitude of errors in predicted values. Lower values of MSE, MAE, and RMSE indicate more accurate predictions, with RMSE being particularly valuable as it shares the unit of the target variable.<br>
+4: R-squared Score: R-squared quantifies the proportion of variance in the dependent variable predictable from the independent variables. A higher value (ranging from 0 to 1) indicates a better model fit.<br>
 5: Durbin-Watson Score: This score assesses autocorrelation in regression model residuals. Values near 2 signify no significant autocorrelation.
 </p> 
-<br/>
+<br>
 
 ## Parameter Settings
 <p align="justify">
