@@ -1,36 +1,63 @@
 # Economic-Forecasting-model-for-Agriculture-using-genetic-algorithm-and-random-forest-algorithm
 # Introduction
 **1.** Agriculture's Vital Role: Agriculture assumes a pivotal role in a nation's economic stability and sustenance, serving as the foundation of food security and playing a crucial role in societal well-being.<br />
+<br />
 **2.** Economic Impact: Beyond nourishment, agriculture fosters rural development, creates employment opportunities, and provides essential raw materials for various industries, contributing to economic diversification.<br />
+<br />
 **3.** Global Trade Significance: Agriculture plays a crucial role in international commerce, enabling nations to export surpluses and accumulate foreign exchange reserves.<br />
+<br />
 **4.** Environmental Stewardship: Sustainable agricultural practices can positively impact the environment and biodiversity, promoting harmony between humanity and nature.<br />
+<br />
 **5.** Symbol of National Identity: Agriculture embodies a nation's self-reliance, cultural heritage, and holistic well-being.<br />
+<br />
 **6.** Agricultural Significance of Punjab: Punjab heavily relies on wheat production, but faces challenges due to market unpredictability driven by factors like climate, soil conditions, and economic trends.<br />
+<br />
 **7.** The Need for Advanced Forecasting: Traditional forecasting methods fall short in capturing the nuanced interdependencies in the agri-food system.<br />
+<br />
 **8.** Innovative Solution: This research introduces an innovative Economic Forecasting Model for Agriculture, focusing on predicting wheat prices in Punjab.<br />
+<br />
 **9.** Comprehensive Data Sources: The dataset draws from diverse sources, including the Crop Reporting Services of the Government of Punjab, encompassing 26 independent variables like yield, soil characteristics, seed varieties, and water availability.<br />
+<br />
 **10.** Complexity Demands Advanced Techniques: The dataset's complexity requires an advanced approach to untangle intricate relationships.<br />
+<br />
 **11.** Random Forest Regressor: This ensemble learning algorithm excels at deciphering nonlinear patterns and interactions in high-dimensional datasets, making it ideal for constructing predictive models.<br />
+<br />
 **12.** Genetic Algorithm Optimization: The Genetic Algorithm dynamically explores the parameter space of the Random Forest Regressor, enhancing the model's performance.<br />
+<br />
 **13.** Limitations of Traditional Approaches: Traditional methods based on historical trends and simplistic models are inadequate for capturing the complexities of agricultural systems.<br />
+<br />
 **14.** AI-Powered Transformation: AI techniques, particularly the Random Forest Regressor and the Genetic Algorithm, offer the capacity to process large and multidimensional datasets while uncovering intricate nonlinear patterns.<br />
+<br />
 **15.** Enhanced Decision-Making: By offering more accurate predictions, these techniques empower stakeholders to make informed choices influencing planting schedules, harvest strategies, and market engagement.<br />
-
+<br />
 # Dataset
 
 - Complexity of Dataset: The dataset consists of 25 independent variables along with the dependent variable "Harvesting Price," offering a detailed perspective on the multifaceted factors influencing wheat pricing in Punjab.
+  
 - Temporal Dimension: The variable "Year" tracks the temporal aspects of wheat harvesting, capturing the influence of market conditions, climate, and external factors on pricing.
+  
 - Geographical Insights: Variables like "Division," "District," and "Tehsil" offer geographic insights into soil types, microclimates, and localized market dynamics shaping wheat pricing.
+  
 - Critical Variables: "Harvest Date," "Wheat Variety," and "Seed Type" play key roles in the crop's quality, quantity, and price dynamics.
+  
 - Seed Quantity and Sowing Date: "Seed Quantity (kg)" and "Sowing Date" determine yield potential, while "Sowing Method" influences crop development.
+  
 - Fertilization: Variables like "Organic Manure (Cow Dung) (kg)," "Urea Fertilizer (kg)," and "DAP Fertilizer (kg)" affect crop vitality and economic outcomes.
+  
 - Soil Type and Irrigation: "Soil Type" and "Irrigation Method" define the growing medium and hydraulic conditions, impacting crop development and financial results.
+  
 - Watering and Weed Control: "No. of Watering Times" and "Residual Weed Material (kg)" highlight the interplay between moisture and weeds.
+  
 - Influence of Previous Crop: "Previous Crop" carries the legacy of past crops, impacting nutrient levels and diseases.
+  
 - Seed Treatment and Pest Control: "Seed Treatment," "Number of Pest Sprays," and "Number of Weed Control Sprays" safeguard crops against pests and diseases.
+  
 - Yield and Residual Material: "Yield (40 Kg/ Acre)" and "Residual Material after Harvest (40 Kg/ Acre)" quantify the crop's value.
+  
 - Role of Watering: "No. of Watering Episodes" underlines the connection between water and agricultural outcomes.
+  
 - Rich Dataset: Comprising 44,424 samples, the dataset is divided into a training set (80%) for model development and a testing set (20%) for validation.
+  
 
 # Table 1: Summary of Descriptive Statistics for Variables within the Dataset
 Variables                       | Minimum  | Median   | Maximum 
