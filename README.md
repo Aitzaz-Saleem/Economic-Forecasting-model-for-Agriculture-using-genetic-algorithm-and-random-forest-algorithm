@@ -35,6 +35,7 @@
   
 
 # Table 1: Summary of Descriptive Statistics for Variables within the Dataset
+<p align="justify">
 Variables                       | Minimum  | Median   | Maximum 
 ---                             | ---      | ---      | ---
 Harvest Date                    | 0        | 2        | 22 
@@ -51,7 +52,8 @@ Yield (40 Kg/ Acre)             | 0.01452  | 35.211   | 82.80938
 Residual Material (40 Kg/ Acre) | 0.680625 | 102.0938 | 1592.051
 No. of Watering Episodes        | 0        | 3        | 10 
 No. of Watering Episodes        | 0.12     | 1400     | 2600
-
+</p>
+<p align="justify">
 # Table 2: Comparative Mean Analysis for Variables across the Original Dataset, Training Set, and Testing Set
 Variables                       | Original Dataset | Training Set | Testing Set 
 ---                             | ---              | ---          | ---
@@ -68,9 +70,9 @@ No. of Weed Control Sprays      | 0.939078         | 0.940064     | 0.935136
 Yield (40 Kg/ Acre)             | 34.49118         | 34.49175     | 34.48893
 Residual Material (40 Kg/ Acre) | 256.3489         | 255.7909     | 258.5809
 No. of Watering Episodes        | 2.866116         | 2.868507     | 2.856553
-
+</p>
 # Table 3: Comparative Standard Deviation Analysis for Variables across the Original Dataset, Training Set, and Testing Set
-
+<p align="justify">
 Variables                       | Original Dataset | Training Set | Testing Set
 ---                             | ---              | ---          | ---
 Harvest Date                    | 0.805476         | 0.805637     | 0.804879
@@ -86,7 +88,7 @@ No. of Weed Control Sprays      | 0.400447         | 0.396117     | 0.417324
 Yield (40 Kg/ Acre)             | 9.810252         | 9.804385     | 9.834339
 Residual Material (40 Kg/ Acre) | 386.834          | 385.6889     | 391.3989
 No. of Watering Episodes        | 1.793422         | 1.790627     | 1.80465
-
+</p>
 # Genetic Algorithm-Enhanced RFR Model (GA-RFR)
 Optimal parameter selection for the Random Forest Regressor (RFR) is of paramount importance to minimize the mean squared error. Attaining a proficient combination of parameters significantly contributes to the reduction of mean squared error, as well as enhances the performance across additional evaluation metrics such as root mean square error, mean absolute error, and Durbin-Watson score. The GA-RFR model amalgamates the merits of both the Random Forest Regressor and Genetic Algorithm (GA) methodologies. The procedural framework for implementing the GA-RFR model is delineated as follows:<br />
 **Step#1:** Create an initial population of binary-coded chromosomes with a predefined quantity. Each chromosome encodes the presence (1) or absence (0) of specific features.<br />
@@ -95,9 +97,9 @@ Optimal parameter selection for the Random Forest Regressor (RFR) is of paramoun
 **Step#4:** Repeat the GA operations described in Step 3 until a predetermined maximum number of iterations is reached.<br />
 **Step#5:** Once the maximum iteration limit is met or a stopping condition is satisfied, conclude the process. Output the optimal combination of RFR parameters, including n_estimators, min_samples_leaf, min_samples_split, and max_depth, obtained through the evolutionary process of the hybrid model.<br />
 This approach employs a Genetic Algorithm to iteratively evolve a population of binary-encoded chromosomes, optimizing the selection of RFR parameters for enhanced model performance. The process involves fitness evaluation, selection, crossover, and mutation operations, leading to the identification of an optimal parameter configuration.
-
+<p align="justify">
 <img width="500" alt="Picture1" src="https://github.com/Aitzaz-Saleem/Economic-Forecasting-model-for-Agriculture-using-genetic-algorithm-and-random-forest-algorithm/assets/139818137/8d9f59c7-759a-4a9b-b657-ebf91ce6783c">
-
+</p>
 # Evaluating Model Performance
 In this research, a set of four well-established metrics was specifically selected to assess the effectiveness of the regression models considered. These metrics include Mean Squared Error (MSE), R-squared (Coefficient of Determination), Mean Absolute Error (MAE), and Root Mean Squared Error (RMSE). Additionally, the Durbin-Watson score was included to comprehensively evaluate the model's performance.<br />
 - **Mean Squared Error (MSE)**: MSE measures the average squared difference between predicted values and actual values, providing a quantified assessment of prediction accuracy.<br />
