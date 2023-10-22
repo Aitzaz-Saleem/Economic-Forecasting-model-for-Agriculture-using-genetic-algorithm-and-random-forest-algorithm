@@ -126,20 +126,32 @@ This approach employs a Genetic Algorithm to iteratively evolve a population of 
 # Evaluating Model Performance
 In this research, a set of four well-established metrics was specifically selected to assess the effectiveness of the regression models considered. These metrics include Mean Squared Error (MSE), R-squared (Coefficient of Determination), Mean Absolute Error (MAE), and Root Mean Squared Error (RMSE). Additionally, the Durbin-Watson score was included to comprehensively evaluate the model's performance.<br />
 - **Mean Squared Error (MSE)**: MSE measures the average squared difference between predicted values and actual values, providing a quantified assessment of prediction accuracy.<br />
+
 - **Mean Absolute Error (MAE)**: MAE calculates the average absolute differences between predicted and actual values. It assigns equal importance to all errors and is less affected by outliers than MSE.<br />
+
 - **Root Mean Squared Error (RMSE)**: RMSE, the square root of MSE, measures the average magnitude of errors in predicted values. Lower values of MSE, MAE, and RMSE indicate more accurate predictions, with RMSE being particularly valuable as it shares the unit of the target variable.<br />
+
 - **R-squared Score**: R-squared quantifies the proportion of variance in the dependent variable predictable from the independent variables. A higher value (ranging from 0 to 1) indicates a better model fit.<br />
+
 - **Durbin-Watson Score**: This score assesses autocorrelation in regression model residuals. Values near 2 signify no significant autocorrelation.<br />
 
 # Parameter Settings
 - **Parameter Significance**: The optimization process's success relies on the meticulous selection of parameters, which significantly shape the course and efficiency of the genetic algorithm (GA).<br />
+
 - **Variable Bounds**: The 'varbound' array defines boundaries for the four optimization variables, constraining the search space and guiding the GA toward regions where optimal solutions are likely to be found.<br />
+
 - **Genetic Algorithm Parameters**: The 'algorithm_param' dictionary contains fundamental parameters governing the optimization process. These include 'max_num_iteration' (set to 20), which limits the algorithm's runtime, and 'population_size,' determining the size of solution populations in each generation.<br />
+
 - **Population Size Analysis**: A comprehensive analysis was conducted by varying the 'population_size' parameter from 1 to 5 to understand its impact on the optimization process, with results systematically presented in Table 4.<br />
+
 - **Mutation and Crossover**: Parameters related to mutation (mutation_probability) and crossover (crossover_probability, crossover_type) guide the creation of new solutions through genetic recombination.<br />
+
 - **Parents Portion and Elitism**: 'Parents_portion' determines the proportion of the population contributing to offspring generation, while 'elit_ratio' ensures that promising solutions persist across generations, preventing premature convergence.<br />
+
 - **Adaptability Parameter**: The 'max_iteration_without_improv' parameter allows the algorithm to overcome stagnation by limiting the number of generations without improvement (set to 5).<br />
+
 - **Optimal Results**: The optimal results achieved at a population size of 5, denoted as (best_n_estimators, best_max_depth, best_min_samples_split, and best_min_samples_leaf), underscore the impact of parameter settings and represent a culmination of the GA's exploration and exploitation phases.<br />
+
 - **Hyperparameter Configurations**: Results presented in the form of hyperparameter configurations and corresponding Mean Squared Error (MSE) values offer a comprehensive view of the GA's optimization journey, highlighting the interplay between hyperparameters and prediction accuracy.<br />
 
 # Table 4: Comparative Analysis for Evaluating Parameters ( R-2, MAE, MSE ,RMSE and Durbin Watson Score) across the population ranging from 1 to 5
