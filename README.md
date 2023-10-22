@@ -115,23 +115,12 @@ In this research, a set of four well-established metrics was specifically select
 - **Durbin-Watson Score**: This score assesses autocorrelation in regression model residuals. Values near 2 signify no significant autocorrelation.<br />
 
 ## Parameter Settings
-- **Parameter Significance**: The optimization process's success relies on the meticulous selection of parameters, which significantly shape the course and efficiency of the genetic algorithm (GA).<br />
-
-- **Variable Bounds**: The 'varbound' array defines boundaries for the four optimization variables, constraining the search space and guiding the GA toward regions where optimal solutions are likely to be found.<br />
-
-- **Genetic Algorithm Parameters**: The 'algorithm_param' dictionary contains fundamental parameters governing the optimization process. These include 'max_num_iteration' (set to 20), which limits the algorithm's runtime, and 'population_size,' determining the size of solution populations in each generation.<br />
-
-- **Population Size Analysis**: A comprehensive analysis was conducted by varying the 'population_size' parameter from 1 to 5 to understand its impact on the optimization process, with results systematically presented in Table 4.<br />
-
-- **Mutation and Crossover**: Parameters related to mutation (mutation_probability) and crossover (crossover_probability, crossover_type) guide the creation of new solutions through genetic recombination.<br />
-
-- **Parents Portion and Elitism**: 'Parents_portion' determines the proportion of the population contributing to offspring generation, while 'elit_ratio' ensures that promising solutions persist across generations, preventing premature convergence.<br />
-
-- **Adaptability Parameter**: The 'max_iteration_without_improv' parameter allows the algorithm to overcome stagnation by limiting the number of generations without improvement (set to 5).<br />
-
-- **Optimal Results**: The optimal results achieved at a population size of 5, denoted as (best_n_estimators, best_max_depth, best_min_samples_split, and best_min_samples_leaf), underscore the impact of parameter settings and represent a culmination of the GA's exploration and exploitation phases.<br />
-
-- **Hyperparameter Configurations**: Results presented in the form of hyperparameter configurations and corresponding Mean Squared Error (MSE) values offer a comprehensive view of the GA's optimization journey, highlighting the interplay between hyperparameters and prediction accuracy.<br />
+<p align="justify">
+In the study, the success of the genetic algorithm (GA) optimization hinges on parameter selection. The 'varbound' array sets crucial boundaries for the four variables, guiding the search space and ensuring valid solutions. Within the GA, the 'algorithm_param' dictionary defines key parameters such as 'max_num_iteration' (20 iterations) and 'population_size' (explored across a range of values). This analysis, presented in Table 4, highlights the interplay of population size with the GA. Mutation and crossover parameters shape genetic recombination, while 'parents_portion' and 'elit_ratio' maintain solution diversity. 'Max_iteration_without_improv' combats stagnation, limiting non-improving generations. The optimal results at a population size of 5 underscore the effectiveness of parameter settings. These values represent the GA's ability to converge toward solutions aligning with optimization goals.
+</p>
+<p align="justify">
+The results illustrate the relationship between hyperparameters and prediction accuracy, guiding parameter configurations for agricultural economic forecasting. The GA's role in balancing complexity, preventing overfitting, and navigating trade-offs enhances the Random Forest Regressor's predictive power. This optimization framework showcases the synergy of computational optimization and machine learning, providing a robust model refinement approach in agricultural economics.
+</p>
 
 ### Table 4: Comparative Analysis for Evaluating Parameters ( R-2, MAE, MSE ,RMSE and Durbin Watson Score) across the population ranging from 1 to 5
 Population | R-2   | MAE    | MSE     | RMSE
@@ -148,33 +137,19 @@ n_estimators | max_depth | min_samples_split | min_samples_leaf | mean_squared_e
 178          | 42        | 3                 | 1                | 546.686
 
 ## RFR Model Performance Analysis
-- **Model Evaluation on Traning Dataset**: Following the training of the Random Forest Regressor on the training dataset, a comprehensive set of evaluation metrics was computed to gauge the model's proficiency in capturing underlying relationships within the data.
-
-- **R-squared (R-2) Score**: The model achieved an impressive R-squared score of 0.999, denoting its exceptional ability to elucidate intricate patterns within the training data. This score corresponds to explaining approximately 99.6% of the dataset's variance, highlighting the model's accuracy in aligning predictions with actual values.
-
-- **Mean Absolute Error (MAE)**: With a MAE of 6.335, the model provides a nuanced perspective on prediction accuracy by measuring the average absolute deviation between its predictions and the actual values. Precision in prediction is crucial in economic forecasting, where even small deviations carry significant decision-making implications.
-
-- **Mean Squared Error (MSE)**: The MSE of 114.963 delves into squared discrepancies between predictions and actual values, representing the magnitude of prediction errors. A lower MSE underscores the model's ability to consistently generate predictions closer to the actual outcomes, a key factor in ensuring reliable and accurate economic forecasts.
-
-- **Root Mean Squared Error (RMSE)**: The RMSE of 10.722 offers a measure of prediction error in the original units of the dependent variable. A lower RMSE reinforces the model's proficiency in generating predictions with smaller deviations from actual outcomes, enhancing its potential to provide dependable forecasts in the field of agricultural economics.
+### Model Evaluation on Traning Dataset 
+<p align="justify">
+After training the Random Forest Regressor on the dataset, a thorough evaluation reveals the model's exceptional proficiency in capturing intricate data relationships. This is notably evidenced by an impressive R-squared (R2) score of 0.999, explaining about 99.6% of the dataset's variance and underlining the model's accuracy in aligning predictions with actual values. Moreover, the model's precision in prediction accuracy is evident through its Mean Absolute Error (MAE) of 6.335. In economic forecasting, where minor deviations carry significant decision-making consequences, such precision is invaluable. Additionally, the Mean Squared Error (MSE) of 114.963 reflects the model's ability to consistently generate predictions close to actual outcomes, a crucial factor for reliable and accurate economic forecasts. The Root Mean Squared Error (RMSE) of 10.722, measured in the original units of the dependent variable, underscores the model's proficiency in providing dependable forecasts with minimal deviations from actual outcomes, particularly beneficial in the realm of agricultural economics.
+</p>
   
 ### Table 6: The table presents training evaluation metrics at the optimal number of estimators
 n_estimators | R-2   | MAE   | MSE     | RMSE
 ---          | ---   | ---   | ---     | ---
 178          | 0.999 | 6.335 | 114.963 | 10.722
 
-- **Model Evaluation on Testing Dataset**: The evaluation metrics provide an in-depth understanding of the performance and resilience of the trained Random Forest Regressor model when applied to the testing dataset.
-
-- **R-squared (R-2) Score**: The model's R-squared score of 0.996 demonstrates a consistent alignment between its predictions and the actual values in the testing data. This consistency signifies the model's ability to maintain its predictive accuracy beyond the training phase, avoiding overfitting and ensuring efficacy with new, unseen data.
-
-- **Mean Absolute Error (MAE)**: With a MAE of 15.815, this metric quantifies the average magnitude of prediction errors in the testing dataset. While it indicates a moderate level of deviation, it is crucial to consider the context of agricultural economics, which inherently involves variability in predictions.
-
-- **Higher Mean Squared Error (MSE)**: The testing dataset registers an MSE of 546.686, slightly higher than that of the training data. This suggests that the model encounters somewhat larger errors when faced with previously unseen data. The difference in MSE values highlights the importance of assessing performance across various datasets for robust generalization.
-
-- **Root Mean Squared Error (RMSE)**: The RMSE of 23.381 reveals the average magnitude of prediction errors in the original units of the dependent variable, offering an insightful measure of prediction accuracy.
-
-- **Durbin Watson Score**: The Durbin Watson score of 2.021 plays a significant role in detecting potential autocorrelation in the residuals of the regression model. Its value suggests minimal positive autocorrelation among prediction errors, hinting at potential temporal patterns or dependencies within the data. Values close to 2 indicate a lack of significant autocorrelation, while deviations indicate varying degrees of autocorrelation.
-
+<p align="justify">
+The evaluation of the Random Forest Regressor model on the testing dataset provides valuable insights into its performance and adaptability beyond the training phase. The model's R-squared (R2) score of 0.996 indicates a consistent alignment between its predictions and the actual values in the testing data. This remarkable consistency showcases the model's ability to maintain predictive accuracy, avoiding overfitting and ensuring effectiveness with unseen data. In terms of Mean Absolute Error (MAE), the score of 15.815 quantifies the average prediction error magnitude in the testing dataset. While it reflects a moderate level of deviation, it's important to consider the inherent variability in agricultural economics predictions. Notably, the slightly higher Mean Squared Error (MSE) in the testing dataset, registering at 546.686, suggests that the model encounters somewhat larger errors with previously unseen data. This underscores the importance of evaluating performance across various datasets for robust generalization. The Root Mean Squared Error (RMSE) of 23.381 provides a clear measure of prediction accuracy in the original units of the dependent variable. Lastly, the Durbin Watson score of 2.021 plays a role in detecting potential autocorrelation in prediction errors, suggesting minimal positive autocorrelation. This hints at potential temporal patterns or dependencies within the data, with values near 2 indicating a lack of significant autocorrelation. These findings collectively illustrate the model's strong predictive capabilities and its ability to handle unforeseen data with precision.
+</p>
 
 ### Table 7: The table presents testing evaluation metrics at the optimal number of estimators
 n_estimators | R-2   | MAE    | MSE     | RMSE   | DW Score
