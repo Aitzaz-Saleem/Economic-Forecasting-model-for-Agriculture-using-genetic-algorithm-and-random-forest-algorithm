@@ -2,7 +2,7 @@
 ## Introduction
 <p align="justify"> Agriculture is a backbone for national stability, food security, and economic diversification. It fosters rural development, employment, and international trade. Sustainable practices benefit both the environment and national identity. Punjab relies heavily on wheat production but faces market uncertainties due to various factors. Traditional forecasting methods fall short. </p>
 <p align="justify"> Our innovative Economic Forecasting Model for Agriculture focuses on predicting wheat prices in Punjab, leveraging a comprehensive dataset. To handle its complexity, we use the Random Forest Regressor and Genetic Algorithm Optimization, superior to traditional approaches. These AI techniques empower stakeholders with precise predictions, enhancing decision-making for planting, harvesting, and market engagement in agricultural economics.</p>
-<br />
+<br>
 
 ## Dataset
 <p align="justify">
